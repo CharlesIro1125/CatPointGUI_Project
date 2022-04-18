@@ -128,7 +128,7 @@ public class SecurityServiceTest {
         //}
 
 
-        Assertions.assertTrue(securityService.changeSensorActivationStatus(sensor,bool) == );
+        //Assertions.assertTrue(securityService.changeSensorActivationStatus(sensor,bool) == );
         //Mockito.verify(s)
     }
 
