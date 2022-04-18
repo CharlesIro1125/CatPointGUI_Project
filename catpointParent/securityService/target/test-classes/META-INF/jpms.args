@@ -1,0 +1,4 @@
+--patch-module
+com.catpoint.jpnd.securityService=_
+--add-reads
+com.catpoint.jpnd.securityService=ALL-UNNAMED

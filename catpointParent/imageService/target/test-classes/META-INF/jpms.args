@@ -1,0 +1,4 @@
+--patch-module
+com.catpoint.jpnd.imageService=_
+--add-reads
+com.catpoint.jpnd.imageService=ALL-UNNAMED

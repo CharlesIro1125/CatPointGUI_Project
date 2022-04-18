@@ -1,0 +1,3 @@
+module-info.class
+com\catpoint\jpnd\imageService\Service\FakeImageService.class
+com\catpoint\jpnd\imageService\Service\AwsImageService.class
