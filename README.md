@@ -10,7 +10,7 @@ The Cat Detection and Emergency Alarm Graphical User Interface developed using J
 
 
 <img src="https://github.com/CharlesIro1125/CatPointGUI_Project/blob/b6f595d4317b6393a9d07014e73a541bd47f1a8f/catpointParent/src/images/cat_sensor1.png" alt="schema" width="600" height="700" />
-<img src="https://github.com/CharlesIro1125/CatPointGUI_Project/blob/b6f595d4317b6393a9d07014e73a541bd47f1a8f/catpointParent/src/images/cat_sensor2.png" alt="schema" width="600" height="700" />
+<img src="https://github.com/CharlesIro1125/CatPointGUI_Project/blob/4e3a60cb0261d176eb50022b309818acf12669b2/catpointParent/src/images/cat_sensor2.jpg" alt="schema" width="600" height="700" />
 
 ##### Directory structure of the Security GUI Repository.
 
