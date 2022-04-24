@@ -1,9 +1,9 @@
 # CatPointGUI_Project
-Cat_detection_GUI_using_AWS_Rekognition.model
+Cat Detection GUI using AWS Rekognition.model
 
 The Cat Detection and Emergency Alarm Graphical User Interface developed using JPanel components can be downloaded and run on your intended IDE (such as Intellij). The multi-module project is built on the Maven framework.
 
-To install, first clone the remote repository into your local repository. Open the Maven build with your IDE (such as Intellij) from the parent pom in the base directory "/catpointParent/pom.xml", and run the application from the main java file "securityService/src/main/java/com/catpoint/jpnd/securityService/application/CatpointApp.java".
+> To install, first clone the remote repository into your local repository. Open the Maven build with your IDE (such as Intellij) from the parent pom in the base  >directory "/catpointParent/pom.xml", and run the application from the main java file " >securityService/src/main/java/com/catpoint/jpnd/securityService/application/CatpointApp.java".
 
 
 
