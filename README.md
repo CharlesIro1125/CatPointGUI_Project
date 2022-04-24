@@ -1,4 +1,4 @@
-# CatPointGUI_Project
+# CatPointGUI Project
 #### Cat Detection GUI using AWS Rekognition model
 
 The Cat Detection and Emergency Alarm Graphical User Interface developed using JPanel components can be downloaded and run on your intended IDE (such as Intellij). The multi-module project is built on the Maven framework.
