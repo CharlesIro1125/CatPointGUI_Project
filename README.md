@@ -1,7 +1,7 @@
 # CatPointGUI_Project
 Cat_detection_GUI_using_AWS_Rekognition.model
 
-<img src="https://github.com/CharlesIro1125/Automated-Pipieline-emr-livy-redshift/blob/master/architecture.png" alt="schema" width="800" height="400" />
+<img src="https://github.com/CharlesIro1125/CatPointGUI_Project/blob/b6f595d4317b6393a9d07014e73a541bd47f1a8f/catpointParent/src/images/cat_sensor1.png" alt="schema" width="600" height="300" />
 ##### Directory structure of the Security GUI Repository.
 
 ```
