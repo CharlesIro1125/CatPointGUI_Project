@@ -30,10 +30,17 @@ import software.amazon.awssdk.services.rekognition.model.Image;
  * 3. Click Add User. Enter a user name and select Programmatic access
  * 4. Next to Permissions. Select 'Attach existing policies directly' and attack 'AmazonRekognitionFullAccess'
  * 5. Next through the remaining screens. Copy the 'Access key ID' and 'Secret access key' for this user.
- * 6. Create a config.properties file in the src/main/resources dir containing the keys referenced in this class
+ * 6. Fill in the details in the src/main/resources/config.properties file.
  *      aws.id=[your access key id]
  *      aws.secret=[your Secret access key]
  *      aws.region=[an aws region of choice. For example: us-east-2]
+ *
+ *
+ *  After completing the steps above.
+ *  Change the ImageService implementation class in the CatpointGui class to use the AwsImageService
+ *  instead of the FakeImageService.
+ *  Change new FakeImageService() -> new AwsImageService();
+ *
  */
 
 public class AwsImageService implements ImageService{
