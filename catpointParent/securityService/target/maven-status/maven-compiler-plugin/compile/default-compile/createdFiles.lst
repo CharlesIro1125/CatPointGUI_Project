@@ -3,6 +3,7 @@ com\catpoint\jpnd\securityService\application\StatusListener.class
 com\catpoint\jpnd\securityService\application\ControlPanel.class
 com\catpoint\jpnd\securityService\application\ImagePanel.class
 com\catpoint\jpnd\securityService\data\SecurityRepository.class
+com\catpoint\jpnd\securityService\data\SensorInstanceCreator.class
 com\catpoint\jpnd\securityService\application\CatpointGui.class
 com\catpoint\jpnd\securityService\application\DisplayPanel.class
 com\catpoint\jpnd\securityService\data\ArmingStatus.class

@@ -1,0 +1,51 @@
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.1.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+<id>src</id>
+<formats>
+    <format>zip</format>
+</formats>
+<includeBaseDirectory>false</includeBaseDirectory>
+    <dependencySets>
+        <dependencySet>
+            <useProjectArtifact>false</useProjectArtifact>
+            <outputDirectory>lib</outputDirectory>
+            <unpack>false</unpack>
+        </dependencySet>
+    </dependencySets>
+    <moduleSets>
+        <moduleSet>
+            <useAllReactorProjects>true</useAllReactorProjects>
+            <includes>
+                <include>com.catpoint.jpnd:securityService</include>
+                <include>com.catpoint.jpnd:imageService</include>
+            </includes>
+            <sources>
+                <includeModuleDirectory>false</includeModuleDirectory>
+                <fileSets>
+                    <fileSet>
+                        <outputDirectory></outputDirectory>
+                        <excludes>
+                            <exclude>${project.build.directory}/**</exclude>
+                        </excludes>
+                    </fileSet>
+                    <fileSet>
+                        <directory>${project.basedir}</directory>
+                        <outputDirectory></outputDirectory>
+                        <includes>
+                            <include>*.jar</include>
+                        </includes>
+                    </fileSet>
+                    <fileSet>
+                        <directory>imageService/target</directory>
+                        <outputDirectory></outputDirectory>
+                        <includes>
+                            <include>*.jar</include>
+                        </includes>
+                    </fileSet>
+                </fileSets>
+            </sources>
+        </moduleSet>
+    </moduleSets>
+</assembly>
+

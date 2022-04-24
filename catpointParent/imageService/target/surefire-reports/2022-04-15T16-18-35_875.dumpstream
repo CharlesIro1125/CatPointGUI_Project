@@ -1,6 +1,0 @@
-# Created at 2022-04-15T16:18:36.973
-Error: Could not find or load main class OBINNA
-
-# Created at 2022-04-15T16:18:36.974
-Caused by: java.lang.ClassNotFoundException: OBINNA
-

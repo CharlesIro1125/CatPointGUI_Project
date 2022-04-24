@@ -10,5 +10,9 @@
         <module name="imageService" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="assembly" target="1.7" />
+      <module name="distribution" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

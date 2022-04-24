@@ -95,6 +95,9 @@ public class SensorPanel extends JPanel{
         securityService.changeSensorActivationStatus(sensor, isActive);
         updateSensorList(sensorListPanel);
     }
+    void updateSensorsSetting(){
+        updateSensorList(sensorListPanel);
+    }
 
     /**
      * Adds a sensor to the securityService and then rebuilds the sensor list

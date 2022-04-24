@@ -6,7 +6,6 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import com.catpoint.jpnd.securityService.data.AlarmStatus;
 import com.catpoint.jpnd.securityService.service.SecurityService;
 import com.catpoint.jpnd.securityService.service.StyleService;
 import net.miginfocom.swing.MigLayout;
@@ -50,7 +49,7 @@ public class ImagePanel extends JPanel implements StatusListener{
                 currentCameraImage = ImageIO.read(chooser.getSelectedFile());
                 Image tmp = new ImageIcon(currentCameraImage).getImage();
                 cameraLabel.setIcon(new ImageIcon(tmp.getScaledInstance(IMAGE_WIDTH, IMAGE_HEIGHT, Image.SCALE_SMOOTH)));
-            } catch (IOException |NullPointerException ioe) {
+            } catch (IOException | NullPointerException ioe) {
                 JOptionPane.showMessageDialog(null, "Invalid image selected.");
             }
             repaint();
@@ -69,7 +68,7 @@ public class ImagePanel extends JPanel implements StatusListener{
     }
 
     @Override
-    public void notify(AlarmStatus status) {
+    public void notify(String description,Color color) {
         //no behavior necessary
     }
 

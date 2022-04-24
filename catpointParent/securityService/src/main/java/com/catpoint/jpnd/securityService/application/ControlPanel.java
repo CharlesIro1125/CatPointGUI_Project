@@ -16,12 +16,14 @@ import net.miginfocom.swing.MigLayout;
 public class ControlPanel extends JPanel{
     private SecurityService securityService;
     private Map<ArmingStatus, JButton> buttonMap;
+    private SensorPanel sensorPanel;
 
 
-    public ControlPanel(SecurityService securityService) {
+    public ControlPanel(SecurityService securityService,SensorPanel sensorPanel1) {
         super();
         setLayout(new MigLayout());
         this.securityService = securityService;
+        this.sensorPanel = sensorPanel1;
 
         JLabel panelLabel = new JLabel("System Control");
         panelLabel.setFont(StyleService.HEADING_FONT);
@@ -37,6 +39,7 @@ public class ControlPanel extends JPanel{
             v.addActionListener(e -> {
                 securityService.setArmingStatus(k);
                 buttonMap.forEach((status, button) -> button.setBackground(status == k ? status.getColor(): null));
+                sensorPanel.updateSensorsSetting();
             });
         });
 

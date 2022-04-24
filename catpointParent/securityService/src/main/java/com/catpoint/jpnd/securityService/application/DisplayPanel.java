@@ -1,11 +1,11 @@
 package com.catpoint.jpnd.securityService.application;
 
 import javax.swing.*;
-
-import com.catpoint.jpnd.securityService.data.AlarmStatus;
 import com.catpoint.jpnd.securityService.service.SecurityService;
 import com.catpoint.jpnd.securityService.service.StyleService;
 import net.miginfocom.swing.MigLayout;
+
+import java.awt.*;
 
 /**
  * Displays the current status of the system. Implements the StatusListener
@@ -27,7 +27,7 @@ public class DisplayPanel extends JPanel implements StatusListener{
 
         panelLabel.setFont(StyleService.HEADING_FONT);
 
-        notify(securityService.getAlarmStatus());
+        notify(securityService.getAlarmStatusDescription(),securityService.getAlarmStatusColor());
 
         add(panelLabel, "span 2, wrap");
         add(systemStatusLabel);
@@ -36,9 +36,9 @@ public class DisplayPanel extends JPanel implements StatusListener{
     }
 
     @Override
-    public void notify(AlarmStatus status) {
-        currentStatusLabel.setText(status.getDescription());
-        currentStatusLabel.setBackground(status.getColor());
+    public void notify(String description, Color color) {
+        currentStatusLabel.setText(description);
+        currentStatusLabel.setBackground(color);
         currentStatusLabel.setOpaque(true);
     }
 

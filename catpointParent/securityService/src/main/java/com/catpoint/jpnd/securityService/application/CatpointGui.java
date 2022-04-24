@@ -1,12 +1,13 @@
 package com.catpoint.jpnd.securityService.application;
 
 import javax.swing.*;
+
+import com.catpoint.jpnd.imageService.Service.ImageService;
 import com.catpoint.jpnd.securityService.data.PretendDatabaseSecurityRepositoryImpl;
 import com.catpoint.jpnd.securityService.data.SecurityRepository;
 import com.catpoint.jpnd.imageService.Service.FakeImageService;
 import com.catpoint.jpnd.securityService.service.SecurityService;
 import net.miginfocom.swing.MigLayout;
-import javax.swing.*;
 
 /**
  * This is the primary JFrame for the application that contains all the top-level JPanels.
@@ -17,11 +18,11 @@ import javax.swing.*;
 
 public class CatpointGui extends JFrame{
     private SecurityRepository securityRepository = new PretendDatabaseSecurityRepositoryImpl();
-    private FakeImageService imageService = new FakeImageService();
+    private ImageService imageService = new FakeImageService();
     private SecurityService securityService = new SecurityService(securityRepository, imageService);
     private DisplayPanel displayPanel = new DisplayPanel(securityService);
-    private ControlPanel controlPanel = new ControlPanel(securityService);
     private SensorPanel sensorPanel = new SensorPanel(securityService);
+    private ControlPanel controlPanel = new ControlPanel(securityService,sensorPanel);
     private ImagePanel imagePanel = new ImagePanel(securityService);
 
     public CatpointGui() {

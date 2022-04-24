@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.catpoint.jpnd.securityService.service.SecurityServiceTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.52 s - in com.catpoint.jpnd.securityService.service.SecurityServiceTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.856 s - in com.catpoint.jpnd.securityService.service.SecurityServiceTest

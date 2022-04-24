@@ -5,9 +5,6 @@ module com.catpoint.jpnd.securityService{
     requires com.google.gson;
     requires com.google.common;
     requires java.prefs;
-    exports com.catpoint.jpnd.securityService.application;
-    exports com.catpoint.jpnd.securityService.data;
-    opens com.catpoint.jpnd.securityService.service;
-    opens com.catpoint.jpnd.securityService.data;
-    opens com.catpoint.jpnd.securityService.application;
+    opens com.catpoint.jpnd.securityService.data to com.google.gson;
+
 }

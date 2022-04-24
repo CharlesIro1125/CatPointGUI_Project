@@ -1,7 +1,8 @@
 package com.catpoint.jpnd.imageService.Service;
 
-import javax.imageio.ImageIO;
+
 import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -66,7 +67,7 @@ public class AwsImageService implements ImageService{
      * Returns true if the provided image contains a cat.
      * @param image Image to scan
      * @param confidenceThreshhold Minimum threshhold to consider for cat. For example, 90.0f would require 90% confidence minimum
-     * @return
+     * @return true or false id cat is present
      */
     @Override
     public boolean imageContainsCat(BufferedImage image, float confidenceThreshhold) {

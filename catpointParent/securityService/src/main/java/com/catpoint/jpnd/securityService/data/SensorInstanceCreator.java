@@ -5,7 +5,6 @@ import com.google.gson.InstanceCreator;
 import java.lang.reflect.Type;
 import java.util.Set;
 import java.util.TreeSet;
-import java.util.UUID;
 
 public class SensorInstanceCreator implements InstanceCreator<Sensor> {
     private String name;

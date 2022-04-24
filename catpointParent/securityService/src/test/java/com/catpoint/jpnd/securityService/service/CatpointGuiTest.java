@@ -24,8 +24,8 @@ public class CatpointGuiTest extends JFrame {
     public CatpointGuiTest(SecurityService securityServ) {
         securityService = securityServ;
         displayPanel = new DisplayPanel(securityServ);
-        controlPanel = new ControlPanel(securityServ);
         sensorPanel = new SensorPanel(securityServ);
+        controlPanel = new ControlPanel(securityServ,sensorPanel);
         imagePanel = new ImagePanel(securityServ);
 
         setLocation(100, 100);
