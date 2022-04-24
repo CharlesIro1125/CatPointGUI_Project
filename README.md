@@ -6,7 +6,7 @@ The Cat Detection and Emergency Alarm Graphical User Interface developed using J
 > To install, first clone the remote repository into your local repository. Open the Maven build with your IDE (such as Intellij) from the parent pom in the base   directory "/catpointParent/pom.xml", and run the application from the main java file "securityService/src/main/java/com/catpoint/jpnd/securityService/application/CatpointApp.java".
 
 
-> To use the Aws Rekognition model. input your Aws access credential in the "src/main/resources/config.properties" file and Change the ImageService implementation class in the CatpointGui class to use the AwsImageService instead of the FakeImageService.
+> To use the Aws Rekognition model. input your Aws access credential in the "imageService/src/main/resources/config.properties" file and Change the ImageService implementation class in the CatpointGui class to use the AwsImageService instead of the FakeImageService.
 Change new FakeImageService() -> new AwsImageService().
 
 
