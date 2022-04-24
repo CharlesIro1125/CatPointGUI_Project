@@ -21,12 +21,13 @@ The Cat Detection and Emergency Alarm Graphical User Interface developed using J
     ├───imageService
     │   ├───src
     │   │   ├───main
-    │   │   │   └───java
-    │   │   │       └───com
-    │   │   │           └───catpoint
-    │   │   │               └───jpnd
-    │   │   │                   └───imageService
-    │   │   │                       └───Service
+    │   │   │   ├───java
+    │   │   │   │   └───com
+    │   │   │   │       └───catpoint
+    │   │   │   │           └───jpnd
+    │   │   │   │               └───imageService
+    │   │   │   │                   └───Service
+    │   │   │   └───resources
     │   │   └───test
     │   │       └───java
     │   │           └───com
@@ -109,6 +110,7 @@ The Cat Detection and Emergency Alarm Graphical User Interface developed using J
     │           │               └───service
     │           └───META-INF
     ├───src
+    │   └───images
     └───target
         └───site
             ├───css
