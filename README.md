@@ -2,6 +2,8 @@
 Cat_detection_GUI_using_AWS_Rekognition.model
 
 
+##### Directory structure of the Security GUI Repository.
+
 ```
 ├───.idea
 └───catpointParent
