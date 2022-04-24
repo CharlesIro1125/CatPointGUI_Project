@@ -5,6 +5,10 @@ The Cat Detection and Emergency Alarm Graphical User Interface developed using J
 
 To install, first clone the remote repository into your local repository. Open the Maven build with your IDE (such as Intellij) from the parent pom in the base directory "/catpointParent/pom.xml", and run the application from the main java file "securityService/src/main/java/com/catpoint/jpnd/securityService/application/CatpointApp.java".
 
+
+
+
+
 <img src="https://github.com/CharlesIro1125/CatPointGUI_Project/blob/b6f595d4317b6393a9d07014e73a541bd47f1a8f/catpointParent/src/images/cat_sensor1.png" alt="schema" width="600" height="700" />
 <img src="https://github.com/CharlesIro1125/CatPointGUI_Project/blob/b6f595d4317b6393a9d07014e73a541bd47f1a8f/catpointParent/src/images/cat_sensor2.png" alt="schema" width="600" height="700" />
 
